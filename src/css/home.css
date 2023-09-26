@@ -1,0 +1,192 @@
+/* .container{
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.container{
+    background: url('https://rstheme.com/products/wordpress/ristora/wp-content/uploads/revslider/dark-slider/dark-slider2.jpg?id=2921') no-repeat center center/cover;
+} */
+
+
+/* body {
+    background-image: url('https://rstheme.com/products/wordpress/ristora/wp-content/uploads/revslider/dark-slider/dark-slider2.jpg?id=2921');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.main-content {
+    background-image: url('https://rstheme.com/products/wordpress/ristora/wp-content/uploads/revslider/dark-slider/dark-slider2.jpg?id=2921');
+    min-height: 63.5rem;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .container {
+    text-align: center;
+    line-height: 1.8;
+    font-size: 30px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.event {
+    margin-left: 18rem;
+}
+
+.event b {
+    font-size: 50px;
+}
+
+.event h4 {
+    color: #a07037;
+} */
+
+.welcome {
+    /* background-color: blueviolet; */
+    position: relative;
+    margin-left: 10.5rem;
+
+
+}
+
+.welcome-context h3 {
+    text-align: center;
+    color: #a07037;
+    font-size: 30px;
+}
+
+.welcome-context h2 {
+    font-size: 64px;
+    color: whitesmoke;
+}
+
+.btn {
+    text-align: center;
+    margin-top: 4.5rem;
+}
+
+button {
+    border-radius: 35px;
+    height: 3.5rem;
+    width: 12.5rem;
+    background-color: #a07037;
+    color: whitesmoke;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.type {
+    text-align: center;
+}
+
+.type h3 {
+    display: inline-block;
+    font-size: 35px;
+    color: white;
+    line-height: 45px;
+    margin-right: 10px;
+}
+
+.typeAnime {
+    display: inline-block;
+    font-size: 35px;
+    color: #a07037;
+    line-height: 45px;
+    font-weight: 600;
+}
+
+/* 
+.type h3{
+    display: inline-block;
+    font-size: 35px;
+    color: white;
+    line-height: 45px;
+    margin-right: 10px;
+}
+
+.typeAnime{
+    display: inline-block;
+    font-size: 35px;
+    color: #a07037;
+    line-height: 45px;
+} */
+
+/* .main-content {
+    height: 600px;
+    margin-left: 15%;
+} */
+
+/* 
+.main-content img{
+    position: absolute;
+    bottom: 0;
+    opacity: 0.9;
+    height: 100%;
+    width: 85%;
+} */
+/* 
+.container {
+    position: relative;
+    top: 50%;
+    z-index: 1;
+} */
+/* 
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: whitesmoke;
+}
+
+.main-content .container .content .greeting {
+    color: #a07037;
+    font-size: 30px;
+}
+
+.main-content .container .content h2 {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 70px;
+    line-height: 74px;
+    position: relative;
+    z-index: 9;
+    color: whitesmoke;
+}
+
+.main-content .container .content h3 {
+    font-size: 30px;
+}
+
+button {
+    margin-top: 40px;
+    background-color: #a07037;
+    border-radius: 35px;
+    font-size: 25px;
+    padding: 10px;
+    box-shadow: none;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #936022;
+} */
