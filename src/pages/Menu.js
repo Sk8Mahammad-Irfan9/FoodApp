@@ -15,7 +15,6 @@ import { useStateHook } from "../store/useStateHook";
 import "../css/menuPage.css";
 const Menu = () => {
   const { cartCount } = useStateHook();
-  console.log(cartCount);
 
   document.title = "Menu";
   const [currentIndex, setCurrentIndex] = useState(1);
@@ -30,11 +29,9 @@ const Menu = () => {
           src="https://imgs.search.brave.com/IHFD6nFIFPD5vb5S1fI1zVqk6ezzn3xpemQX3w1-BDM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9jYXJ0b29uLWlt/YWdlLWNoZWYtaG9s/ZGluZy1oYW1idXJn/ZXJfODk0ODU1LTE5/NDEuanBnP3NpemU9/NjI2JmV4dD1qcGc"
           alt="..."
         />
-        <Link to="/Checkout">
-          <a href="/Checkout">
-            <AiOutlineShoppingCart />
-            {cartCount}
-          </a>
+        <Link to="/Checkout" className="shopping-cart">
+          <AiOutlineShoppingCart size={30} />
+          <span>{cartCount.length}</span>
         </Link>
       </div>
       <div className="menu-items">

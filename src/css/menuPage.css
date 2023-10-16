@@ -135,3 +135,12 @@
 .menu-navbar svg {
     font-size: 1.5rem;
 }
+
+.shopping-cart{
+    text-decoration: none;
+    color: green;
+}
+
+.product-price{
+    margin: 1.5rem;
+}

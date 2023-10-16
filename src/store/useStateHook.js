@@ -21,8 +21,8 @@ const removeItem = (i, state) => {
 };
 
 export const useStateHook = () => {
+  const cartCount = cartStore((state) => state.cartItems);
   const addToCart = cartStore((state) => state.addToCart);
-  const cartCount = cartStore((state) => state.cartCount);
   const removeFromCart = cartStore((state) => state.removeFromCart);
   const resetCart = cartStore((state) => state.resetCart);
 
