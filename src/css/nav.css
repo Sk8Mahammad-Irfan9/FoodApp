@@ -30,6 +30,9 @@
     transition-timing-function: ease;
 }
 
+ul a{
+    text-decoration: none;
+}
 
 .nav {
     position: fixed;
@@ -65,63 +68,122 @@
     border-radius: 50%;
 }
 
-.nav-bar ul li:hover {
+/* .nav-bar ul li:hover {
     background-color: rgb(54, 53, 53);
-}
+} */
 
 .side-nav .nav-bar ul li {
     margin: 1.2rem;
 }
 
-
-/* ul {
-    list-style: none;
+@media only screen and (min-width: 768px) {
+    .contact {
+        color: red;
+    }
 }
 
-ul li {
-    width: 90%;
-}
+/* Test for Nav */
 
-.side-nav {
-    width: 20%;
-    left: 0;
+.overlay {
     position: fixed;
+    z-index: 1;
     top: 0;
-    z-index: 9999;
+    left: 0;
     height: 100%;
-    background: black;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    width: 0;
+    transition: 0.5s;
 }
 
-.side-nav .logo img {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    text-align: center;
-}
-
-.side-nav .logo {
-    text-align: center;
-
-}
-
-li a {
-    display: block;
-    color: #b5b5b4;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-li {
-    margin: 10px;
+.overlay-content {
+    position: relative;
+    top: 25%;
     width: 100%;
+    text-align: center;
+}
+
+.overlay a {
+    display: block;
+    color: #818181;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 30px;
+    transition: 0.2s;
+}
+
+.overlay a:focus,
+.overlay a:hover {
+    color: #f1f1f1;
+    cursor: pointer;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px;
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .nav {
+        position: fixed;
+        width: 15%;
+        background-color: #101010;
+        padding: 20px 8px;
+        height: 100vh;
+        overflow-y: auto;
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 1;
+    }
 }
 
 
-li a:hover {
-    background-color: #555;
-    color: white;
-} */
+@media only screen and (max-width: 768px) {
+    .nav {
+        position: fixed;
+        width: 20%;
+        background-color: #101010;
+        padding: 0px 0px;
+        height: 100vh;
+        overflow-y: auto;
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 1;
+    }
+
+    .side-nav .logo{
+        margin-bottom: 8rem;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .nav{
+        display: none;
+    }
+}
+
+@media only screen and (min-width:1440px){
+    .social-media .contact {
+        margin: 13px;
+    }
+}

@@ -1,0 +1,5 @@
+{
+    "editor.suggest.preview": false,
+    "remote.localPortHost": "localhost",
+    "liveServer.settings.host": "127.0.0.1"
+}

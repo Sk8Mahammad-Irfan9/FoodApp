@@ -28,3 +28,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* span{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */

@@ -1,0 +1,48 @@
+tbody tr .product-img img {
+    height: 100px;
+    padding: 7px 24px;
+}
+
+tbody tr .product-name {
+    color: #666666;
+    font-weight: bold;
+    padding: 5px 18px;
+}
+
+tbody tr .product-remove {
+    padding: 25px;
+    text-align: center;
+    color: black;
+}
+
+/* thead tr .product-remove {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    word-wrap: normal !important;
+} */
+
+tbody tr .product-remove a {
+    text-decoration: none;
+}
+
+tbody tr .product-price {
+    font-weight: 600;
+}
+
+tbody tr .product-subtotal {
+    text-align: center;
+
+}
+
+.checkOuts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.shop-table{
+    box-shadow: 0 0 17px 2px rgba(0,0,5.5);
+}

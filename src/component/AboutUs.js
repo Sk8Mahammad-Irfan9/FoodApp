@@ -4,7 +4,7 @@ const AboutUs = () => {
   return (
     <>
       <div className="container">
-        <div className="event">
+        <div className="event" id="about">
           <h4>About Us</h4>
           <b>DESCOVER OUR STORYs</b>
           <p>

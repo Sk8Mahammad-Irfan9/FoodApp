@@ -1,12 +1,13 @@
 import React from "react";
 import Nav from "../component/Nav";
-// import "../css/nav.css";
 import "../css/home.css";
 import TypeAnime from "../components/TypeAnime";
 import AboutUs from "../component/AboutUs";
 import Menu from "../component/Menu";
+import { Link } from "react-router-dom";
 
 const Home = () => {
+  document.title="Ristora"
   return (
     <>
       <Nav />
@@ -24,12 +25,17 @@ const Home = () => {
           </div>
           {/* Also redirect to menu items */}
           <div className="btn">
-            <button>Get Started Now</button>
+            <Link to="/menu"><button>Get Started Now</button></Link>
           </div>
         </div>
       </div>
       <AboutUs />
       <Menu />
+      <footer
+        style={{ textAlign: "center", fontSize: "16px", fontWeight: "500" }}
+      >
+        &copy; 2023 All Rights Reserved
+      </footer>
     </>
   );
 };

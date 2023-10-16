@@ -5,7 +5,12 @@ import { AiFillFacebook } from "react-icons/ai";
 import { RiTwitterXLine } from "react-icons/ri";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import { BsPinterest } from "react-icons/bs";
+import { useStateHook } from "../store/useStateHook";
+
 const Nav = () => {
+  const{cartCount}=useStateHook()
+
+
   return (
     <>
       <div className="nav">
@@ -18,9 +23,11 @@ const Nav = () => {
           </div>
           <div className="nav-bar">
             <ul>
-              <li>
-                <a href="#home">Home</a>
-              </li>
+              <Link to="/">
+                <li>
+                  <a href="#home">Home</a>
+                </li>
+              </Link>
               <li>
                 <a href="#news">News</a>
               </li>
@@ -28,8 +35,13 @@ const Nav = () => {
                 <a href="#contact">Contact</a>
               </li>
               <li>
-                <Link to="/aboutus">About</Link>
+                <a href="#about">About</a>
               </li>
+              <Link to="/Checkout">
+                <li>
+                  <a href="/Checkout">Checkout{cartCount} </a>
+                </li>
+              </Link>
             </ul>
           </div>
         </div>
@@ -52,6 +64,7 @@ const Nav = () => {
             </a>
           </div>
         </div>
+        {/* <a href="javascript:void(0);" style="font-size:15px;" className="icon" onClick={{myFunction()}}>&#9776;</a> */}
       </div>
     </>
   );

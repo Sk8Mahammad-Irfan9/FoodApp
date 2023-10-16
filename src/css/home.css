@@ -112,81 +112,9 @@ button {
     font-weight: 600;
 }
 
-/* 
-.type h3{
-    display: inline-block;
-    font-size: 35px;
-    color: white;
-    line-height: 45px;
-    margin-right: 10px;
+@media only screen and (max-width: 768px) {
+    .welcome-context h2 {
+        font-size: 50px;
+        color: whitesmoke;
+    }
 }
-
-.typeAnime{
-    display: inline-block;
-    font-size: 35px;
-    color: #a07037;
-    line-height: 45px;
-} */
-
-/* .main-content {
-    height: 600px;
-    margin-left: 15%;
-} */
-
-/* 
-.main-content img{
-    position: absolute;
-    bottom: 0;
-    opacity: 0.9;
-    height: 100%;
-    width: 85%;
-} */
-/* 
-.container {
-    position: relative;
-    top: 50%;
-    z-index: 1;
-} */
-/* 
-.content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: whitesmoke;
-}
-
-.main-content .container .content .greeting {
-    color: #a07037;
-    font-size: 30px;
-}
-
-.main-content .container .content h2 {
-    display: inline-block;
-    margin-bottom: 20px;
-    font-size: 70px;
-    line-height: 74px;
-    position: relative;
-    z-index: 9;
-    color: whitesmoke;
-}
-
-.main-content .container .content h3 {
-    font-size: 30px;
-}
-
-button {
-    margin-top: 40px;
-    background-color: #a07037;
-    border-radius: 35px;
-    font-size: 25px;
-    padding: 10px;
-    box-shadow: none;
-    border: none;
-    color: whitesmoke;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #936022;
-} */

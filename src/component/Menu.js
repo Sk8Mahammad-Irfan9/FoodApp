@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/menu.css";
+import { Link } from "react-router-dom";
 const Menu = () => {
   return (
     <>
@@ -21,7 +22,7 @@ const Menu = () => {
             </p>
           </div>
           <div className="butn">
-            <button>View all menu</button>
+            <Link to="/menu" ><button>View all menu</button></Link>
           </div>
         </div>
       </div>

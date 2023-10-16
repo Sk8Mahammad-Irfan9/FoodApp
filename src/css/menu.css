@@ -105,4 +105,36 @@ button {
 
 .butn {
     margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .menu-desc {
+        padding: 2.5rem 6.5rem;
+        line-height: 1.8;
+        font-size: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    .menu {
+        margin-left: 9.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .menu {
+        margin-left: 9rem;
+        text-align: center;
+    }
+
+    footer{
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 500;
+    }
 }

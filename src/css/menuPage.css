@@ -1,0 +1,137 @@
+.menu-tabs .menu-container ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu-tabs .menu-container ul li {
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin: 0 1.2rem;
+}
+
+.menu-tabs .menu-container ul li:hover {
+    color: #a07037;
+}
+
+.menu-tabs .menu-container ul li svg {
+    margin: 2.2rem 2.5rem;
+}
+
+.menufooditems {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3.5rem 2.5rem;
+}
+
+.menu-container {
+    position: relative;
+}
+
+.content {
+    padding: 8.5rem 3.5rem;
+    display: flex;
+}
+
+.content-right {
+    background-color: burlywood;
+}
+
+.content-left {
+    margin-right: 10.5rem;
+}
+
+.content-left ul {
+    list-style: none;
+}
+
+.content-left ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem;
+}
+
+.content-left ul li img {
+    height: 21.5rem;
+    width: 22.5rem;
+}
+
+.content-left .lunch-info {
+    margin: 2.5rem 3.5rem;
+}
+
+/* test */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    background-color: #f7f7f7;
+}
+
+.grid-item {
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem 4.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+/* style te contents */
+
+.lunch .lunch-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 1.2rem;
+}
+
+.grid-item img {
+    height: auto;
+    width: 40%;
+    border-radius: 12px;
+}
+
+.details {
+    margin: 1.5rem 2.5rem;
+}
+
+
+.contentt {
+    display: none;
+    transform: translate3d(0, 0, 0);
+    transition: padding .2s ease-in-out;
+}
+
+.active-content {
+    display: block;
+
+}
+
+.menu-navbar {
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1.6rem;
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+}
+
+.menu-navbar img {
+    height: 10.5rem;
+    width: 10.5rem;
+    border-radius: 50%;
+}
+
+.menu-navbar svg {
+    font-size: 1.5rem;
+}
