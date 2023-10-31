@@ -11,24 +11,25 @@ const cartStore = create((set) => ({
   resetCart: () => set((state) => ({ cartItems: [] })),
 }));
 
-const removeItem = (i, state) => {
+function removeItem(i, state) {
   const newArray = state.cartItems;
-  const indexToRemove = state.cartItems.findIndex((item) => item._id === i._id);
+  const indexToRemove = state.cartItems.findIndex((item) => item._id === i.id);
+
   if (indexToRemove !== -1) {
     newArray.splice(indexToRemove, 1);
   }
+
   return newArray;
-};
+}
 
 export const useStateHook = () => {
   const cartCount = cartStore((state) => state.cartItems);
   const addToCart = cartStore((state) => state.addToCart);
   const removeFromCart = cartStore((state) => state.removeFromCart);
   const resetCart = cartStore((state) => state.resetCart);
-
   return {
-    addToCart,
     cartCount,
+    addToCart,
     removeFromCart,
     resetCart,
   };

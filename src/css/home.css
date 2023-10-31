@@ -1,28 +1,5 @@
-/* .container{
-    border: 2px solid;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-
-.container{
-    background: url('https://rstheme.com/products/wordpress/ristora/wp-content/uploads/revslider/dark-slider/dark-slider2.jpg?id=2921') no-repeat center center/cover;
-} */
-
-
-/* body {
-    background-image: url('https://rstheme.com/products/wordpress/ristora/wp-content/uploads/revslider/dark-slider/dark-slider2.jpg?id=2921');
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-
 .main-content {
-    background-image: url('https://rstheme.com/products/wordpress/ristora/wp-content/uploads/revslider/dark-slider/dark-slider2.jpg?id=2921');
+    background-image: url('../images/background1.jpg');
     min-height: 63.5rem;
     width: 100%;
     background-attachment: fixed;

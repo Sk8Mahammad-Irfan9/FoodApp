@@ -1,28 +1,5 @@
-/* .container{
-    border: 2px solid;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-
-.container{
-    background: url('https://rstheme.com/products/wordpress/ristora/wp-content/uploads/revslider/dark-slider/dark-slider2.jpg?id=2921') no-repeat center center/cover;
-} */
-
-
-/* body {
-    background-image: url('https://rstheme.com/products/wordpress/ristora/wp-content/uploads/revslider/dark-slider/dark-slider2.jpg?id=2921');
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-
 .bg-menu {
-    background-image: url('https://rstheme.com/products/wordpress/ristora/wp-content/uploads/2019/04/2.jpg?id=3057');
+    background-image: url('../images/background2.jpg');
     min-height: 850px;
     background-attachment: fixed;
     background-position: center;
@@ -49,14 +26,6 @@
     align-items: center;
     justify-content: center;
 }
-
-/* 
-.menu-txt {
-    position: relative;
-    margin-left: 10.5rem;
-
-
-} */
 
 .menu-txt-context h3 {
     color: #a07037;
@@ -132,7 +101,7 @@ button {
         text-align: center;
     }
 
-    footer{
+    footer {
         text-align: center;
         font-size: 1rem;
         font-weight: 500;

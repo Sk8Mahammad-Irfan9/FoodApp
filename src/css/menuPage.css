@@ -116,7 +116,7 @@
 
 }
 
-.menu-navbar {
+/* .menu-navbar {
     background-color: cadetblue;
     display: flex;
     justify-content: space-between;
@@ -124,23 +124,33 @@
     position: sticky;
     overflow: hidden;
     top: 0;
-}
+} */
 
-.menu-navbar img {
+.menu-navbar {
     height: 10.5rem;
     width: 10.5rem;
+    background-position: center;
     border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../images/Logo.jpeg');
 }
 
 .menu-navbar svg {
     font-size: 1.5rem;
 }
 
-.shopping-cart{
+.shopping-cart {
     text-decoration: none;
     color: green;
 }
 
-.product-price{
+.product-price {
     margin: 1.5rem;
+}
+
+.menu-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: blanchedalmond;
 }

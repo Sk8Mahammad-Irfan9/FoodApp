@@ -15,15 +15,6 @@ tbody tr .product-remove {
     color: black;
 }
 
-/* thead tr .product-remove {
-    clip: rect(1px, 1px, 1px, 1px);
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-    word-wrap: normal !important;
-} */
-
 tbody tr .product-remove a {
     text-decoration: none;
 }
@@ -41,8 +32,43 @@ tbody tr .product-subtotal {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: column;
 }
 
-.shop-table{
-    box-shadow: 0 0 17px 2px rgba(0,0,5.5);
+.checkOuts ul{
+    list-style: none;
+}
+
+.checkOuts ul li{
+    border: 1px solid;
+    margin: 2.5rem 2.5rem;
+    width: 100%;
+    padding: 1.5rem 5.5rem;
+    border-radius: 20px;
+}
+
+.shop-table {
+    box-shadow: 0 0 17px 2px rgba(0, 0, 5.5);
+}
+
+.checkout-products{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.add-item{
+    width: 6.5rem;
+}
+
+.remove-item{
+    width: 6.5rem;
+}
+
+.checkout-page{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

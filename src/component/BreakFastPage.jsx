@@ -1,16 +1,53 @@
-import React from "react";
-import breakfastItems from "../products/breakfastItems";
-// import "./css/lunch.css";
-import { useStateHook } from "../store/useStateHook";
+import React, { useState, useEffect } from "react";
 import { BsFillCartPlusFill } from "react-icons/bs";
+import axios from "axios";
+import useCartStore from "../store/cartStore";
 
-const BreakFastPage = ({ data }) => {
-  const { addToCart } = useStateHook();
-  const handleAddToCart = () => {
-    addToCart(data);
-  };
+const BreakFastPage = ({ item }) => {
+  const addToCart = useCartStore((state) => state.addToCart);
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:4000/getBreakfast")
+      .then((items) => setItems(items.data))
+      .catch((err) => console.log(err));
+  }, []);
+
   return (
-    <div className="lunch">
+    <>
+      <div className="lunch">
+        <div className="lunch-container">
+          <div className="grid-container">
+            {items.map((item) => (
+              <div className="grid-item" key={item.id}>
+                <img src={item.img} alt="..." />
+                <div className="details">
+                  <h3>{item.title}</h3>
+                  <p className="product-price">{item.desc}</p>
+                  <p className="product-price">${item.price}</p>
+                  <button onClick={() => addToCart(item)}>
+                    <BsFillCartPlusFill />
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* <div className="lunch">
+        <div className="lunch-container">
+          <div className="grid-container">
+            {breakfastItems.map((meal) => (
+              <div className="grid-item" key={meal.id}>
+                <Meal key={meal.id} meal={meal} onAddToCart={addToCart} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div> */}
+      {/* <div className="lunch">
       <div className="lunch-container">
         <div className="grid-container">
           {breakfastItems.map((item, index) => (
@@ -28,7 +65,8 @@ const BreakFastPage = ({ data }) => {
           ))}
         </div>
       </div>
-    </div>
+    </div> */}
+    </>
   );
 };
 

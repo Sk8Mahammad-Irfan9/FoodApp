@@ -4,12 +4,10 @@ import Menu from "./pages/Menu";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
-// import Nav from "./component/Nav";
 import Checkout from "./pages/Checkout";
 
 const RoutingPath = () => (
   <Router>
-  {/* <Nav /> */}
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/aboutus" element={<AboutUs />} />

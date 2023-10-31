@@ -8,38 +8,30 @@ import { BsPinterest } from "react-icons/bs";
 import { useStateHook } from "../store/useStateHook";
 
 const Nav = () => {
-  const{cartCount}=useStateHook()
-
+  const { cartCount } = useStateHook();
 
   return (
     <>
       <div className="nav">
         <div className="side-nav">
           <div className="logo">
-            <img
-              src="https://imgs.search.brave.com/IHFD6nFIFPD5vb5S1fI1zVqk6ezzn3xpemQX3w1-BDM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9jYXJ0b29uLWlt/YWdlLWNoZWYtaG9s/ZGluZy1oYW1idXJn/ZXJfODk0ODU1LTE5/NDEuanBnP3NpemU9/NjI2JmV4dD1qcGc"
-              alt="..."
-            />
+           
           </div>
           <div className="nav-bar">
             <ul>
               <Link to="/">
-                <li>
-                  <a href="#home">Home</a>
-                </li>
+                <li>Home</li>
               </Link>
+              <li>News</li>
               <li>
-                <a href="#news">News</a>
+                Contact
               </li>
               <li>
-                <a href="#contact">Contact</a>
-              </li>
-              <li>
-                <a href="#about">About</a>
+                About
               </li>
               <Link to="/Checkout">
                 <li>
-                  <a href="/Checkout">Checkout{cartCount} </a>
+                  Checkout{cartCount.lenght}
                 </li>
               </Link>
             </ul>

@@ -11,10 +11,12 @@ import DinnerPage from "../component/DinnerPage";
 import DessertPage from "../component/DessertPage";
 import BreakFastPage from "../component/BreakFastPage";
 import { useStateHook } from "../store/useStateHook";
+import useCartStore from "../store/cartStore";
 
 import "../css/menuPage.css";
+
 const Menu = () => {
-  const { cartCount } = useStateHook();
+  // const { cartCount } = useStateHook();
 
   document.title = "Menu";
   const [currentIndex, setCurrentIndex] = useState(1);
@@ -22,13 +24,12 @@ const Menu = () => {
     setCurrentIndex(index);
   };
 
+  const cartCount = useCartStore((state) => state.cartItems);
+
   return (
     <>
-      <div className="menu-navbar">
-        <img
-          src="https://imgs.search.brave.com/IHFD6nFIFPD5vb5S1fI1zVqk6ezzn3xpemQX3w1-BDM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9jYXJ0b29uLWlt/YWdlLWNoZWYtaG9s/ZGluZy1oYW1idXJn/ZXJfODk0ODU1LTE5/NDEuanBnP3NpemU9/NjI2JmV4dD1qcGc"
-          alt="..."
-        />
+      <div className="menu-nav">
+        <div className="menu-navbar"></div>
         <Link to="/Checkout" className="shopping-cart">
           <AiOutlineShoppingCart size={30} />
           <span>{cartCount.length}</span>
