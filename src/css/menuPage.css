@@ -154,3 +154,16 @@
     justify-content: space-between;
     background-color: blanchedalmond;
 }
+
+@media screen and (min-width:1318px) {
+    .grid-item {
+        border-radius: 12px;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2.5rem 4.5rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    }
+}
