@@ -31,7 +31,7 @@ const Menu = () => {
       <div className="menu-nav">
         <div className="menu-navbar"></div>
         <Link to="/Checkout" className="shopping-cart">
-          <AiOutlineShoppingCart size={30} />
+          <AiOutlineShoppingCart size={37} />
           <span>{cartCount.length}</span>
         </Link>
       </div>
