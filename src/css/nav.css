@@ -30,7 +30,7 @@
     transition-timing-function: ease;
 }
 
-ul a{
+ul a {
     text-decoration: none;
     color: whitesmoke;
     font-size: 1.5rem;
@@ -52,7 +52,7 @@ ul a{
 
 .side-nav .logo {
     margin-bottom: 12rem;
-    
+
 }
 
 .side-nav .nav-bar ul {
@@ -179,24 +179,29 @@ ul a{
         z-index: 1;
     }
 
-    .side-nav .logo{
+    .side-nav .logo {
         margin-bottom: 8rem;
     }
 }
 
-@media only screen and (max-width: 425px){
-    .nav{
+@media only screen and (max-width: 425px) {
+    .nav {
         display: none;
     }
 }
 
-@media only screen and (max-width: 1560px){
-    .nav{
-        width: 21%;
+@media only screen and (max-width: 1560px) {
+    .nav {
+        width: 18%;
+        height: 100%;
+    }
+    .side-nav .logo {
+        margin-bottom: 5rem;
+    
     }
 }
 
-@media only screen and (min-width:1440px){
+@media only screen and (min-width:1440px) {
     .social-media .contact {
         margin: 13px;
     }

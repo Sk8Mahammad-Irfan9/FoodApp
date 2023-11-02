@@ -167,3 +167,11 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     }
 }
+
+@media only screen and (max-width: 1560px) {
+    .menu-navbar {
+        height: 5.5rem;
+        width: 5.5rem;
+    }
+
+}
