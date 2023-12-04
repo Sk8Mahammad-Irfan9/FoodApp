@@ -46,6 +46,12 @@ app.get("/getDessert", async (req, res) => {
     .catch((err) => res.json(err));
 });
 
+app.get("/getOrders", async (req, res) => {
+  await Order.find()
+    .then((orders) => res.json(orders))
+    .catch((err) => res.json(err));
+});
+
 app.post("/api/create-order", async (req, res) => {
   const orderNo = Math.floor(1000 + Math.random() * 9000);
   const { items, totalPrice, quantity } = req.body;
