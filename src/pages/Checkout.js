@@ -8,22 +8,12 @@ import { useStateHook } from "../store/cartStore";
 
 const Checkout = () => {
   document.title = "Chekout";
-  // const { cartCount, addToCart, removeFromCart, resetCart } = useStateHook();
   const { removeOneItemCart, addToCart, clearCart } = useStateHook();
   const navigate = useNavigate();
 
   // const cartItems = useStateHook((state) => state.cartItems);
   const cartItems = useCartStore((state) => state.cartItems);
   // const removeFromCart = useCartStore((state) => state.removeFromCart);
-  // const removeFromCart = useCartStore((state) => state.removeFromCart);
-
-  // const handleRemoveItems = () => {
-  //   removeFromCart(item.id);
-  // };
-
-  // const [itemNames, setItemNames] = useState("");
-
-  // const cartCount = useCartStore((state) => state.cartItems);
   const [cartItem, setCartItems] = useState([]);
 
   useEffect(() => {
@@ -57,25 +47,6 @@ const Checkout = () => {
   if (cartItems.length === 0) {
     return <h1>Do Shopping</h1>;
   }
-
-  // const checkout = async () => {
-  //   try {
-  //     const response = await createOrder({
-  //       items: cartItems,
-  //       totalAmount: totalPrice,
-  //     });
-  //     if (response) {
-  //       alert(
-  //         "Order created successfully, Order Code is : " +
-  //           response.data.data.orderNo
-  //       );
-  //       clearCart();
-  //       navigate("/");
-  //     }
-  //   } catch (e) {
-  //     console.log(e);
-  //   }
-  // };
 
   const checkout = () => {
     // alert(generateOrderNumber());
@@ -112,16 +83,6 @@ const Checkout = () => {
 
   return (
     <>
-      <h1>Yo have {cartItems.length} items</h1>
-      {/* <ul>
-        {cartItems.map((item) => (
-          <li key={item.id}>
-          {item.title}
-          <img src={item.img} alt="..." />
-          </li>
-        ))}
-      </ul> */}
-
       <div className="checkOuts">
         <ul>
           {cartItem.map((item) => (
@@ -134,9 +95,9 @@ const Checkout = () => {
                 />
                 <div></div>
                 <h3>{item.title}</h3>
-                <span>₹{item.price}</span>
+                <span>${item.price}</span>
                 <span>Sub Total -</span>
-                <span>₹{item.count * item.price}</span>
+                <span>${item.count * item.price}</span>
                 <span
                   onClick={() =>
                     useCartStore.getState().removefromcart(item.id)
@@ -148,8 +109,6 @@ const Checkout = () => {
               <button className="add-item" onClick={() => addToCart(item)}>
                 +
               </button>
-              {/* <textarea>{item.count}</textarea> */}
-              {/* <input value={item.count}/> */}
               <span>{item.count}</span>
               <button
                 className="remove-item"

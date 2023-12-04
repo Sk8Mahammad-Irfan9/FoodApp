@@ -35,36 +35,6 @@ const DinnerPage = ({ data }) => {
           </div>
         </div>
       </div>
-      {/* <div className="lunch">
-        <div className="lunch-container">
-          <div className="grid-container">
-            {dinnerItems.map((meal) => (
-              <div className="grid-item" key={meal.id}>
-                <Meal key={meal.id} meal={meal} onAddToCart={addToCart} />
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-      <div className="lunch">
-        <div className="lunch-container">
-          <div className="grid-container">
-            {dinnerItems.map((item, index) => (
-              <div className="grid-item" key={index}>
-                <img src={item.img} alt="..." />
-                <div className="details">
-                  <h3>{item.title}</h3>
-                  <p className="product-price">{item.desc}</p>
-                  <p className="product-price">${item.price}</p>
-                  <button onClick={handleAddToCart}>
-                    <BsFillCartPlusFill />
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div> */}
     </>
   );
 };

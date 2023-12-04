@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Checkout from "./pages/Checkout";
+import Orders from "./pages/Orders";
 
 const RoutingPath = () => (
   <Router>
@@ -13,6 +14,7 @@ const RoutingPath = () => (
       <Route path="/aboutus" element={<AboutUs />} />
       <Route path="/menu" element={<Menu />}/>
       <Route path="/Checkout" element={<Checkout />}/>
+      <Route path="/order" element={<Orders />}/>
     </Routes>
   </Router>
 );

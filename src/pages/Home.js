@@ -23,7 +23,6 @@ const Home = () => {
               <TypeAnime />
             </div>
           </div>
-          {/* Also redirect to menu items */}
           <div className="btn">
             <Link to="/menu"><button>Get Started Now</button></Link>
           </div>
