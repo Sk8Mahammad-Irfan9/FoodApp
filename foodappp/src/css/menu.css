@@ -1,0 +1,105 @@
+.bg-menu {
+    background-image: url('../images/background2.jpg');
+    min-height: 850px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu {
+    margin-left: 18rem;
+    text-align: center;
+}
+
+.menu-txt-context h3 {
+    color: #a07037;
+    font-size: 30px;
+}
+
+.menu-txt-context h2 {
+    font-size: 64px;
+    color: whitesmoke;
+}
+
+.btn {
+    text-align: center;
+}
+
+button {
+    border-radius: 35px;
+    height: 3.5rem;
+    width: 12.5rem;
+    background-color: #a07037;
+    color: whitesmoke;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: -webkit-center;
+}
+
+button:active {
+    background-color: #ebb36e;
+}
+
+.menu-context h3 {
+    color: #a07037;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 50px;
+}
+
+.menu-context h2 {
+    color: whitesmoke;
+    font-size: 60px;
+    line-height: 65px;
+}
+
+.menu-desc {
+    color: whitesmoke;
+    font-size: 25px;
+    line-height: 1.8;
+}
+
+.butn {
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .menu-desc {
+        padding: 2.5rem 6.5rem;
+        line-height: 1.8;
+        font-size: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    .menu {
+        margin-left: 2.5rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .menu {
+        /* margin-left: 9rem; */
+        text-align: center;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}

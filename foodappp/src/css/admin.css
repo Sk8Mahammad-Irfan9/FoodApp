@@ -1,0 +1,23 @@
+.Admin-dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem auto;
+}
+
+.user-order {
+    padding: 1.5rem;
+    border-radius: 20px;
+    color: white;
+    background-color: #8a6017;
+}
+.user-order:active {
+    color: white;
+    background-color: #ffc96b;
+}
+
+.admin-details{
+    padding: 1.5rem;
+    margin: 1.5rem auto;
+}

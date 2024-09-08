@@ -1,0 +1,140 @@
+.nav {
+    position: fixed;
+    background-color: #101010;
+    padding: 30px 40px;
+    height: 100vh;
+    overflow-y: auto;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.side-nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 300px;
+    background-color: #101010;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+    transition: left 0.3s ease-in-out;
+    /* z-index: 2; */
+}
+
+.close-icon {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.side-nav .logo {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url('../images/Logo.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.social-media {
+    width: 100%;
+}
+
+.social-media .contact {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.social-media .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social-media .social a {
+    margin: 1rem;
+    font-size: 24px;
+    color: whitesmoke;
+}
+
+.nav-bar ul li {
+    margin: 1.5rem;
+    font-size: 20px;
+    color: white;
+}
+
+.nav-bar ul li:hover {
+    color: #6d4412
+}
+
+.social a:hover {
+    color: #6d4412
+}
+
+@media only screen and (min-width: 961px) {
+    .close-icon {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .nav {
+        background: none;
+        box-shadow: none;
+
+    }
+
+    .nav-open {
+        z-index: 9;
+    }
+
+    .icon-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-icon {
+        color: whitesmoke;
+        font-size: 30px;
+        display: block;
+    }
+
+    .side-nav {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        left: -100%;
+
+        z-index: 9;
+    }
+
+    .side-nav-open {
+        left: 0;
+
+
+    }
+
+    .side-nav .logo {
+        margin-bottom: 1.5rem;
+    }
+
+    .social-media {
+        margin-top: 1.5rem;
+    }
+}

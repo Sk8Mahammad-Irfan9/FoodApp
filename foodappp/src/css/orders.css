@@ -1,0 +1,14 @@
+.order-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.order-item.checked {
+    background-color: #c7ecc7;
+    /* Highlight color for checked orders */
+}
+
+.order-item p {
+    margin: 5px 0;
+}

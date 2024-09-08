@@ -1,0 +1,39 @@
+.account {
+    border: 2px solid;
+    border-radius: 20px;
+}
+
+.account-logout {
+    background-color: #ac2424;
+    padding: 0.5rem;
+    margin: 0.5rem auto;
+    border-radius: 14px;
+    color: white;
+}
+
+.account-logout:active {
+    background-color: #ff2a2a;
+}
+
+.account-login {
+    background-color: #a07037;
+    padding: 1.5rem;
+    margin: 0.5rem auto;
+    border-radius: 14px;
+    color: white;
+}
+
+.account-login:active {
+    background-color: #62441e;
+}
+.account-register {
+    background-color: #157105;
+    padding: 1.5rem;
+    margin: 0.5rem auto;
+    border-radius: 14px;
+    color: white;
+}
+
+.account-register:active {
+    background-color: #2bc410;
+}

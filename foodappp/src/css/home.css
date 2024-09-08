@@ -1,0 +1,102 @@
+.main-content {
+    background-image: url('../images/background1.jpg');
+    min-height: 63.5rem;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .container {
+    text-align: center;
+    line-height: 1.8;
+    font-size: 30px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.event {
+    margin-left: 18rem;
+}
+
+.event b {
+    font-size: 50px;
+}
+
+.event h4 {
+    color: #a07037;
+} */
+
+.welcome {
+    position: relative;
+}
+
+.welcome-context h3 {
+    text-align: center;
+    color: #a07037;
+    font-size: 30px;
+}
+
+.welcome-context h2 {
+    font-size: 64px;
+    color: whitesmoke;
+}
+
+.btn {
+    text-align: center;
+    margin-top: 4.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+button {
+    border-radius: 35px;
+    height: 3.5rem;
+    width: 12.5rem;
+    background-color: #a07037;
+    color: whitesmoke;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.type {
+    text-align: center;
+}
+
+.type h3 {
+    display: inline-block;
+    font-size: 35px;
+    color: white;
+    line-height: 45px;
+    margin-right: 10px;
+}
+
+.typeAnime {
+    display: inline-block;
+    font-size: 35px;
+    color: #a07037;
+    line-height: 45px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+    .welcome-context h2 {
+        font-size: 50px;
+        color: whitesmoke;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1560px) {
+    .event p {
+        padding: 1.5rem;
+    }
+}

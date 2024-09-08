@@ -1,0 +1,96 @@
+/* .background{
+    background-image: url('https://rstheme.com/products/wordpress/ristora/wp-content/uploads/2019/03/inner_6.jpg');
+    height: 100%;
+    width: 90%;
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.container {
+    text-align: center;
+    line-height: 1.8;
+    font-size: 30px;
+    min-width: 100%;
+    padding-right: 5.5rem;
+}
+
+.event {
+    margin-left: 27rem;
+    padding: 1.5rem;
+}
+
+.event b {
+    font-size: 50px;
+}
+
+.event h4 {
+    color: #a07037;
+    font-size: 54px;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    .event p {
+        padding: 1.5rem 6.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    .event {
+        margin-left: 1.5rem;
+    }
+
+    .container {
+        padding-right: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .event {
+        text-align: center;
+        line-height: 1.8;
+        font-size: 24px;
+        /* margin-left: 9.5rem; */
+        /* height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center; */
+    }
+}
+
+@media only screen and(min-width:1200px) {
+    .container {
+        text-align: center;
+        line-height: 1.8;
+        font-size: 30px;
+        min-width: 100%;
+        padding-right: 4.5rem;
+    }
+}
+
+@media only screen and(min-width:992px) {
+    .container {
+        text-align: center;
+        line-height: 1.8;
+        font-size: 30px;
+        min-width: 100%;
+        padding-right: 4.5rem;
+    }
+}
+
+@media only screen and(min-width:768px) {
+    .container {
+        text-align: center;
+        line-height: 1.8;
+        font-size: 30px;
+        min-width: 100%;
+        padding-right: 4.5rem;
+    }
+}
