@@ -25,7 +25,6 @@ tbody tr .product-price {
 
 tbody tr .product-subtotal {
     text-align: center;
-
 }
 
 .checkOuts {
@@ -58,10 +57,7 @@ tbody tr .product-subtotal {
     justify-content: space-around;
 }
 
-.add-item {
-    width: 6.5rem;
-}
-
+.add-item,
 .remove-item {
     width: 6.5rem;
 }
@@ -73,18 +69,9 @@ tbody tr .product-subtotal {
     justify-content: center;
 }
 
-.add-item-list {
-    border-radius: 35px;
-    height: 3.5rem;
-    width: 3.5rem;
-    background-color: #a07037;
-    color: whitesmoke;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.remove-item-list {
+.add-item-list,
+.remove-item-list,
+.checkout-btn {
     border-radius: 35px;
     height: 3.5rem;
     width: 3.5rem;
@@ -96,13 +83,84 @@ tbody tr .product-subtotal {
 }
 
 .checkout-btn {
-    border-radius: 35px;
-    height: 3.5rem;
     width: 12.5rem;
-    background-color: #a07037;
-    color: whitesmoke;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
     margin-bottom: 2.5rem;
+}
+
+
+@media (max-width: 768px) {
+    tbody tr .product-img img {
+        height: 80px;
+        padding: 5px 12px;
+    }
+
+    tbody tr .product-name {
+        padding: 3px 12px;
+    }
+
+    tbody tr .product-remove {
+        padding: 15px;
+    }
+
+    .checkOuts {
+        flex-direction: column;
+    }
+
+    .checkOuts ul li {
+        margin: 1.5rem;
+        padding: 1rem 3rem;
+        border-radius: 15px;
+    }
+
+    .checkout-products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .add-item,
+    .remove-item {
+        width: 5rem;
+    }
+
+    .checkout-btn {
+        height: 3rem;
+        width: 10rem;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    tbody tr .product-img img {
+        height: 60px;
+        padding: 3px 8px;
+    }
+
+    tbody tr .product-name {
+        padding: 2px 8px;
+    }
+
+    tbody tr .product-remove {
+        padding: 10px;
+    }
+
+    .checkOuts ul li {
+        margin: 1rem;
+        padding: 0.75rem 2rem;
+        border-radius: 10px;
+    }
+
+    .checkout-products {
+        flex-direction: column;
+    }
+
+    .add-item,
+    .remove-item {
+        width: 4.5rem;
+    }
+
+    .checkout-btn {
+        height: 2.75rem;
+        width: 9rem;
+        font-size: 16px;
+    }
 }
