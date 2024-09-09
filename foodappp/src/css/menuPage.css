@@ -199,6 +199,7 @@
     .grid-item {
         margin: 1rem;
         padding: 15px;
+        flex-direction: column;
     }
 
     .menu-container {
