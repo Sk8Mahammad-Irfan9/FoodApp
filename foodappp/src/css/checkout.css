@@ -1,166 +1,122 @@
-tbody tr .product-img img {
-    height: 100px;
-    padding: 7px 24px;
+/* General Styles */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
 }
 
-tbody tr .product-name {
-    color: #666666;
-    font-weight: bold;
-    padding: 5px 18px;
-}
-
-tbody tr .product-remove {
-    padding: 25px;
-    text-align: center;
-    color: black;
-}
-
-tbody tr .product-remove a {
-    text-decoration: none;
-}
-
-tbody tr .product-price {
-    font-weight: 600;
-}
-
-tbody tr .product-subtotal {
-    text-align: center;
-}
-
-.checkOuts {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-}
-
-.checkOuts ul {
+.list-none {
     list-style: none;
 }
 
-.checkOuts ul li {
-    border: 1px solid;
-    margin: 2.5rem 2.5rem;
-    width: 100%;
-    padding: 1.5rem 5.5rem;
-    border-radius: 20px;
+/* Navigation Link */
+.text-2xl {
+    font-size: 1.5rem;
 }
 
-.shop-table {
-    box-shadow: 0 0 17px 2px rgba(0, 0, 5.5);
+/* Checkout Container */
+.checkOuts {
+    padding: 1.5rem;
+    background-color: #1e293b;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Checkout Item Styles */
 .checkout-products {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    background-color: #2d3748;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: all 0.3s;
 }
 
-.add-item,
-.remove-item {
-    width: 6.5rem;
+.checkout-products:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-.checkout-page {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.checkout-products img {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
+/* Button Styles */
 .add-item-list,
 .remove-item-list,
 .checkout-btn {
-    border-radius: 35px;
-    height: 3.5rem;
-    width: 3.5rem;
+    border-radius: 30px;
+    height: 40px;
+    width: 40px;
     background-color: #a07037;
-    color: whitesmoke;
+    color: #fff;
     border: none;
     font-size: 20px;
     cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-item-list:hover,
+.remove-item-list:hover,
+.checkout-btn:hover {
+    background-color: #8b5b2a;
 }
 
 .checkout-btn {
-    width: 12.5rem;
-    margin-bottom: 2.5rem;
+    width: 120px;
+    margin-bottom: 20px;
 }
 
+/* Total Summary Styles */
+.cart-totals {
+    margin-top: 20px;
+    color: white;
+}
 
+.cart-totals h2,
+.cart-totals h4 {
+    color: black;
+    margin: 0;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
-    tbody tr .product-img img {
-        height: 80px;
-        padding: 5px 12px;
-    }
-
-    tbody tr .product-name {
-        padding: 3px 12px;
-    }
-
-    tbody tr .product-remove {
-        padding: 15px;
-    }
-
-    .checkOuts {
-        flex-direction: column;
-    }
-
-    .checkOuts ul li {
-        margin: 1.5rem;
-        padding: 1rem 3rem;
-        border-radius: 15px;
-    }
-
     .checkout-products {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
 
-    .add-item,
-    .remove-item {
-        width: 5rem;
+    .checkout-products img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .item-count {
+        font-size: 18px;
     }
 
     .checkout-btn {
-        height: 3rem;
-        width: 10rem;
-        font-size: 18px;
+        width: 100%;
+        height: 50px;
     }
 }
 
 @media (max-width: 480px) {
-    tbody tr .product-img img {
-        height: 60px;
-        padding: 3px 8px;
-    }
-
-    tbody tr .product-name {
-        padding: 2px 8px;
-    }
-
-    tbody tr .product-remove {
-        padding: 10px;
-    }
-
-    .checkOuts ul li {
-        margin: 1rem;
-        padding: 0.75rem 2rem;
-        border-radius: 10px;
-    }
-
     .checkout-products {
-        flex-direction: column;
+        padding: 0.5rem;
     }
 
-    .add-item,
-    .remove-item {
-        width: 4.5rem;
+    .checkout-products img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .item-count {
+        font-size: 16px;
     }
 
     .checkout-btn {
-        height: 2.75rem;
-        width: 9rem;
-        font-size: 16px;
+        height: 40px;
     }
 }
