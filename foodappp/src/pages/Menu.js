@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { GiKnifeFork } from "react-icons/gi";
 import { MdOutlineDinnerDining } from "react-icons/md";
 import { MdBreakfastDining } from "react-icons/md";
@@ -22,6 +22,22 @@ const Menu = () => {
   };
 
   const cartCount = useCartStore((state) => state.cartItems);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 4000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="loading">
+        <h2>Loading Menu...</h2>
+      </div>
+    );
+  }
 
   return (
     <>
