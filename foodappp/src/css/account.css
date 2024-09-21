@@ -1,14 +1,30 @@
 .account {
-    border: 2px solid;
+    border: 2px solid #ddd;
+    /* Change to a lighter color */
     border-radius: 20px;
+    background-color: #f9f9f9;
+    /* Light background for contrast */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    transition: box-shadow 0.3s ease;
+    /* Smooth shadow transition */
+}
+
+.account:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    /* Elevate on hover */
 }
 
 .account-logout {
     background-color: #ac2424;
-    padding: 0.5rem;
-    margin: 0.5rem auto;
+    padding: 0.75rem 1.5rem;
+    /* Adjusted padding */
+    margin: 0.5rem 0;
     border-radius: 14px;
     color: white;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    /* Smooth background transition */
 }
 
 .account-logout:active {
@@ -17,23 +33,43 @@
 
 .account-login {
     background-color: #a07037;
-    padding: 1.5rem;
-    margin: 0.5rem auto;
+    padding: 1rem 1.5rem;
+    /* Adjusted padding */
+    margin: 0.5rem 0;
     border-radius: 14px;
     color: white;
+    text-align: center;
+    transition: background-color 0.3s ease;
 }
 
 .account-login:active {
     background-color: #62441e;
 }
+
 .account-register {
     background-color: #157105;
-    padding: 1.5rem;
-    margin: 0.5rem auto;
+    padding: 1rem 1.5rem;
+    /* Adjusted padding */
+    margin: 0.5rem 0;
     border-radius: 14px;
     color: white;
+    text-align: center;
+    transition: background-color 0.3s ease;
 }
 
 .account-register:active {
     background-color: #2bc410;
+}
+
+/* Responsive Styles */
+@media (max-width: 640px) {
+    .account {
+        width: 90%;
+        /* Adjust for smaller screens */
+    }
+
+    .text-2xl {
+        font-size: 1.5rem;
+        /* Adjust font size for smaller screens */
+    }
 }

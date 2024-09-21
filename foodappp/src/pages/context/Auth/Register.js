@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useAuth } from "./auth";
 import { Link, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import axios from "axios";
@@ -28,7 +27,6 @@ const Register = () => {
         toast.error(res.data.message);
       }
     } catch (err) {
-      console.log(err);
       toast.error("Something went wrong!");
     }
   };
@@ -36,7 +34,7 @@ const Register = () => {
     <>
       <div className="bg-yellow-700 text-white">
         <Link to="/account" className="text-2xl">
-          🠠Go Back
+          🠠 Go Back
         </Link>
       </div>
       <div className="bg-yellow-700 sm:h-screen flex justify-center items-center p-10">
@@ -45,18 +43,18 @@ const Register = () => {
             <div className="sm:h-full w-full object-cover">
               <img
                 src="https://img.freepik.com/premium-photo/cartoon-image-chef-holding-hamburger_894855-1941.jpg?w=826"
-                alt="Cheif Logo"
+                alt="Chef Logo"
                 className="rounded-lg sm:h-96 w-full object-cover"
               />
             </div>
             <div>
               <h2 className="text-white">Sign In</h2>
               <form
-                onSubmit={(e) => handleSubmit(e)}
+                onSubmit={handleSubmit}
                 className="flex flex-col object-cover"
               >
-                <label for="name" className="m-2 text-white">
-                  Enter Your name
+                <label htmlFor="name" className="m-2 text-white">
+                  Enter Your Name
                 </label>
                 <input
                   type="text"
@@ -69,7 +67,7 @@ const Register = () => {
                   maxLength={30}
                 />
 
-                <label for="email" className="m-2 text-white">
+                <label htmlFor="email" className="m-2 text-white">
                   Enter Your Email
                 </label>
                 <input
@@ -80,9 +78,22 @@ const Register = () => {
                   placeholder="Enter email"
                   className="rounded-3xl border-none p-2"
                   required
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  onInvalid={(e) =>
+                    e.target.setCustomValidity(
+                      "Please enter a valid email address."
+                    )
+                  }
+                  onInput={(e) => e.target.setCustomValidity("")}
                 />
-                <label for="password" className="m-2 text-white">
-                  Enter Your password
+                <small className="text-red-500">
+                  {email &&
+                    !/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email) &&
+                    "Please enter a valid email address."}
+                </small>
+
+                <label htmlFor="password" className="m-2 text-white">
+                  Enter Your Password
                 </label>
                 <input
                   type="password"
