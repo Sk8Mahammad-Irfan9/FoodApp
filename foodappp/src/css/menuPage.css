@@ -66,7 +66,6 @@
     margin: 2.5rem 3.5rem;
 }
 
-/* Grid Layout */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -144,9 +143,7 @@
     position: fixed;
 }
 
-/* Media Queries */
 
-/* For very small devices */
 @media only screen and (max-width: 600px) {
     .menu-tabs .menu-container ul {
         align-items: flex-start;

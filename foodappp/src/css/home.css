@@ -11,28 +11,6 @@
     justify-content: center;
 }
 
-/* .container {
-    text-align: center;
-    line-height: 1.8;
-    font-size: 30px;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.event {
-    margin-left: 18rem;
-}
-
-.event b {
-    font-size: 50px;
-}
-
-.event h4 {
-    color: #a07037;
-} */
-
 .welcome {
     position: relative;
 }
