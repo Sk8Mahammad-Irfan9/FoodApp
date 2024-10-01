@@ -11,6 +11,7 @@ import DinnerPage from "../component/DinnerPage";
 import DessertPage from "../component/DessertPage";
 import BreakFastPage from "../component/BreakFastPage";
 import useCartStore from "../store/cartStore";
+import ClipLoader from "react-spinners/ClipLoader";
 
 import "../css/menuPage.css";
 
@@ -33,8 +34,22 @@ const Menu = () => {
 
   if (loading) {
     return (
-      <div className="loading">
-        <h2>Loading Menu...</h2>
+      <div
+        className="loading"
+        style={{
+          height: "100vh",
+          width: "100vw",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <ClipLoader
+          cssOverride={{
+            textAlign: "center",
+          }}
+          loading
+        />
       </div>
     );
   }

@@ -6,7 +6,6 @@
 
 .order-item.checked {
     background-color: #c7ecc7;
-    /* Highlight color for checked orders */
 }
 
 .order-item p {
